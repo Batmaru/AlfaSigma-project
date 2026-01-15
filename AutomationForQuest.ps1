@@ -37,7 +37,7 @@ if (Test-Path $csvPath) {
     $tasks = Import-Csv -Path $csvPath -Delimiter ";"
     Write-Host "Trovati $($tasks.Count) task da processare nel file CSV." -ForegroundColor Yellow
 
-5
+
     foreach ($row in $tasks) {
         $id = $row.Id
         
@@ -62,5 +62,3 @@ Write-Host "Procedura Bulk terminata. Puoi chiudere la finestra." -ForegroundCol
 Stop-Transcript
 
 
-# documentation that I used for the implementatiojìn of this script : " https://support.quest.com/it-it/technical-documents/on-demand-migration/current/user-guide/39"
-# Also my progect's tutor helped me for the implementation of this script.
