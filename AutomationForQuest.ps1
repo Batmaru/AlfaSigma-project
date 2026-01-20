@@ -1,8 +1,8 @@
 
 Param (
     [string] $region = "EU",
-    [string] $orgId,
-    [string] $IdProgect,
+    [string] $orgId ,
+    [string] $IdProgect ,
     [string] $csvPath
 )
 
@@ -24,6 +24,8 @@ Select-OdmOrganization -OrganizationId $orgId
 # selezione progetto
 # $IdProgect ="********************"
 Select-OdmProject  -ProjectId $IdProgect
+
+
 
 # # id collection pilot wave cut over
 # $IdCollection ="******************"
